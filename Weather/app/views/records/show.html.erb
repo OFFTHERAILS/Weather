@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @record.Date %>
+</p>
+
+<p>
+  <b>Day:</b>
+  <%= @record.Day %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @record.Time %>
+</p>
+
+<p>
+  <b>Temperature:</b>
+  <%= @record.Temperature %>
+</p>
+
+<p>
+  <b>Precipitation:</b>
+  <%= @record.Precipitation %>
+</p>
+
+<p>
+  <b>Airpressure:</b>
+  <%= @record.AirPressure %>
+</p>
+
+<p>
+  <b>Windspeed:</b>
+  <%= @record.WindSpeed %>
+</p>
+
+<p>
+  <b>Winddirection:</b>
+  <%= @record.WindDirection %>
+</p>
+
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>

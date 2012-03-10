@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Date: 2012-03-10
+  Day: MyString
+  Time: 2012-03-10 20:07:54
+  Temperature: 1
+  Precipitation: 1
+  AirPressure: 1
+  WindSpeed: 1
+  WindDirection: MyString
+
+two:
+  Date: 2012-03-10
+  Day: MyString
+  Time: 2012-03-10 20:07:54
+  Temperature: 1
+  Precipitation: 1
+  AirPressure: 1
+  WindSpeed: 1
+  WindDirection: MyString

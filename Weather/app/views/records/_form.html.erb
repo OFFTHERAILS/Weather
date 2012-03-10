@@ -1,0 +1,49 @@
+<%= form_for(@record) do |f| %>
+  <% if @record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@record.errors.count, "error") %> prohibited this record from being saved:</h2>
+
+      <ul>
+      <% @record.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Date %><br />
+    <%= f.date_select :Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Day %><br />
+    <%= f.text_field :Day %>
+  </div>
+  <div class="field">
+    <%= f.label :Time %><br />
+    <%= f.time_select :Time %>
+  </div>
+  <div class="field">
+    <%= f.label :Temperature %><br />
+    <%= f.number_field :Temperature %>
+  </div>
+  <div class="field">
+    <%= f.label :Precipitation %><br />
+    <%= f.number_field :Precipitation %>
+  </div>
+  <div class="field">
+    <%= f.label :AirPressure %><br />
+    <%= f.number_field :AirPressure %>
+  </div>
+  <div class="field">
+    <%= f.label :WindSpeed %><br />
+    <%= f.number_field :WindSpeed %>
+  </div>
+  <div class="field">
+    <%= f.label :WindDirection %><br />
+    <%= f.text_field :WindDirection %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Search results
+</title>
+</head>
+<body>
+<h1>Search results</h1>
+<table border="1">
+<tr>
+<td width="40%"><p align="center"><i><b>Record</b></i></td>
+<td width="20%"><p align="center"><i><b>Date</b></i></td>
+</tr>
+<% @records.each do |record| %>
+<tr>
+<td>
+<a href="
+<%=record.id%>
+">
+<%=record.Date%>
+</a>
+</td>
+<td><%= record.Time %></td>
+</tr>
+<% end %>
+</table>
+<p> <a href="/records"> Back</a> </body>
+</html>
