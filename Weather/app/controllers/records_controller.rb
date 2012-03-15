@@ -83,6 +83,6 @@ class RecordsController < ApplicationController
 end
 
 def search
-@records = Records.find(:all, :conditions => ["title LIKE ?", "%#{params[:key]}%"])
+@records = Record.find(:all, :conditions => ["title LIKE ?", "%#{params[:key]}%"])
 end
 
