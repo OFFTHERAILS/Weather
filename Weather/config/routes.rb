@@ -1,5 +1,19 @@
 Weather::Application.routes.draw do
+  
+  
+  get "sessions/new"
+  get "sessions/create"
+  get "sessions/destroy"
+  get 'admin' => 'admin#index' 
+
+  resources :users
   resources :records
+  
+ controller :sessions do
+   get 'login' => :new
+   post 'login' => :create
+   delete 'logout' => :destroy
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
